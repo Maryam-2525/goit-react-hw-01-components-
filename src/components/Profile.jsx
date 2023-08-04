@@ -1,8 +1,9 @@
-import user from './data/user.json';
+import user from '../data/user.json';
 // Importing the React library, required for defining React components
 import React from 'react';
 
-// Defining a functional component called "Profile"
+
+// Defining a functional component called "Profile"p
 // It receives a prop called "data", which is an object containing profile information
 const Profile = ({ data }) => {
   // Destructuring the "stats" property from the "data" object
