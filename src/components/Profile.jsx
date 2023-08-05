@@ -1,4 +1,5 @@
 import user from '../data/user.json';
+import PropTypes from 'prop-types';
 // Importing the React library, required for defining React components
 import React from 'react';
 
