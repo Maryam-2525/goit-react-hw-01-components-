@@ -4,12 +4,19 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 
+
 // Defining a functional component called "Profile"p
 // It receives a prop called "data", which is an object containing profile information
-const Profile = ({ data }) => {
+const Profile = ({data}) => { 
+ 
   // Destructuring the "stats" property from the "data" object
   // to obtain "followers," "views," and "likes" variables
   const { followers, views, likes } = data.stats;
+  username,
+  tag,
+  location,
+  avatar,
+  data.stats;
 
   // JSX - rendering the UI for the Profile component
   return (
@@ -48,6 +55,17 @@ const Profile = ({ data }) => {
       </ul>
     </div>
   );
+};
+
+Profile.proptypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  avatar: PropTypes.string,
+  location: PropTypes.string,
+  followers: PropTypes.number,
+  views: PropTypes.number,
+  likes: PropTypes.number,
+
 };
 
 // Exporting the Profile component so that it can be used in other parts of the application
