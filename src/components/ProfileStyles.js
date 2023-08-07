@@ -37,5 +37,14 @@ export const userLocation = styled.p
 
 
 export const visuallyHidden = styled.div
-     `list-style:none;
-     `    
+    `list-style:none;
+    `    
+
+export const statItemsCont = styled.div
+    `display: flex;
+     align-itemsL:center;
+     flex-direction:column;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 4px;
+    `     

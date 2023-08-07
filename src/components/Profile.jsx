@@ -2,7 +2,7 @@ import user from '../data/user.json';
 import PropTypes from 'prop-types';
 // Importing the React library, required for defining React components
 import React from 'react';
-import {profileCont,avatarImgCont, userInfo, userName, userTag, userLocation} from '../components/styles/ProfileStyles';
+import {profileCont,avatarImgCont, userInfo, userName, userTag, userLocation, statItemsCont,visuallyHidden} from '../components/styles/ProfileStyles';
 
 
 // Defining a functional component called "Profile"p
@@ -40,8 +40,8 @@ const Profile = ({data}) => {
               <p>{data.location}</p>
           </userLocation>    
       </userInfo>
-      {/* Creating an unordered list to display stats */}
-      
+
+      {/* Creating an unordered list to display stats */} 
       <ul>
       <visuallyHidden>
         {/* Displaying the number of followers */}
@@ -63,7 +63,6 @@ const Profile = ({data}) => {
         </li>
         </visuallyHidden>
       </ul>
-
       </profileCont>
     </div>
   );
