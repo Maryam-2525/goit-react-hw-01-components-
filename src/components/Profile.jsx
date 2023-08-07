@@ -21,20 +21,29 @@ const Profile = ({data}) => {
   // JSX - rendering the UI for the Profile component
   return (
     <div>
-      {/* Displaying the user's avatar image */}
-      <img src={data.avatar} alt={data.username} />
-
-      {/* Displaying the user's username */}
-      <p>{data.username}</p>
-
-      {/* Displaying the user's tag */}
-      <p>@{data.tag}</p>
-
-      {/* Displaying the user's location */}
-      <p>{data.location}</p>
-
+      <profileCont>
+        <avatarImgCont>
+           {/* Displaying the user's avatar image */}
+           <img src={data.avatar} alt={data.username} />
+        </avatarImgCont>
+        <userInfo>
+          <userName>
+             {/* Displaying the user's username */}
+             <p>{data.username}</p>
+          </userName>
+          <userTag>
+              {/* Displaying the user's tag */}
+              <p>@{data.tag}</p>
+          </userTag> 
+          <userLocation>
+              {/* Displaying the user's location */}
+              <p>{data.location}</p>
+          </userLocation>    
+      </userInfo>
       {/* Creating an unordered list to display stats */}
+      
       <ul>
+      <visuallyHidden>
         {/* Displaying the number of followers */}
         <li>
           <span>Followers</span>
@@ -52,7 +61,10 @@ const Profile = ({data}) => {
           <span>Likes</span>
           <span>{likes}</span>
         </li>
+        </visuallyHidden>
       </ul>
+
+      </profileCont>
     </div>
   );
 };

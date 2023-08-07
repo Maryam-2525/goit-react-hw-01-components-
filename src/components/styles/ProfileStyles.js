@@ -34,3 +34,8 @@ export const userLocation = styled.p
     `color: Ash;
      font-size: 10px;
     `        
+
+
+export const visuallyHidden = styled.div
+     `list-style:none;
+     `    
