@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
-export const profileCont = styled.div
+export const ProfileCont = styled.div
     `background-color: white;
      margin: 50px 0px 50px 0px;
      padding: 50px;
     `
 
-export const avatarImgCont = styled.div
+export const AvatarImgCont = styled.div
     `display: flex;
      justify-content: center;
      align-items: center:
@@ -14,33 +14,33 @@ export const avatarImgCont = styled.div
 
     `
 
-export const userInfo = styled.div
+export const UserInfo = styled.div
     `display: flex;
      justify-content: center;
      align-items: center:
      margin-bottom:2px;
     `    
-export const userName = styled.p
+export const UserName = styled.p
     `color: Black;
      font-size: 18px;
     `    
 
-export const userTag = styled.p
+export const UserTag = styled.p
     `color: Ash;
      font-size: 10px;
     `    
 
-export const userLocation = styled.p
+export const UserLocation = styled.p
     `color: Ash;
      font-size: 10px;
     `        
 
 
-export const visuallyHidden = styled.div
+export const VisuallyHidden = styled.div
     `list-style:none;
     `    
 
-export const statItemsCont = styled.div
+export const StatItemsCont = styled.div
     `display: flex;
      align-itemsL:center;
      flex-direction:column;

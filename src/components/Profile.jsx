@@ -2,7 +2,7 @@ import user from '../data/user.json';
 import PropTypes from 'prop-types';
 // Importing the React library, required for defining React components
 import React from 'react';
-import {profileCont,avatarImgCont, userInfo, userName, userTag, userLocation, statItemsCont,visuallyHidden} from '../components/styles/ProfileStyles';
+import {ProfileCont,AvatarImgCont, UserInfo, UserName, UserTag, UserLocation, StatItemsCont,VisuallyHidden} from '../components/styles/ProfileStyles';
 
 
 // Defining a functional component called "Profile"p
@@ -15,7 +15,7 @@ const Profile = ({data}) => {
   username,
   tag,
   location,
-  avatar,
+  avatar
   data.stats;
 
   // JSX - rendering the UI for the Profile component
